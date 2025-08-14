@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Images</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        background-image: url("royal.jpeg");
+        background-position: center; /* center the image */
+        background-repeat: no-repeat; 
+        background-size: cover;
+
+    }
+
+    /* Navigation Bar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar .logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+    }
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar ul li {
+        margin: 0 10px;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+    /* Search Section */
+    .search-section {
+        background-color: #1a5d78;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .search-box {
+        padding: 10px;
+        width: 50%;
+        max-width: 400px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+    }
+    .tabs {
+        margin-top: 15px;
+    }
+    .tabs a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Car Grid */
+    .car-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+    .car-card {
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.2s ease;
+    }
+    .car-card:hover {
+        transform: scale(1.03);
+    }
+    .car-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .car-card h3 {
+        margin: 10px 0 5px;
+        font-size: 18px;
+    }
+    .car-card p {
+        color: gray;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+    <div class="logo">carwale</div>
+    <ul>
+        <li><a href="#">New Cars</a></li>
+        <li><a href="#">Used Cars</a></li>
+        <li><a href="#">Reviews & News</a></li>
+    </ul>
+</div>
+
+<!-- Search and Tabs -->
+<div class="search-section">
+    <input type="text" placeholder="Type to select car name" class="search-box">
+    <div class="tabs">
+        <a href="#">News</a>
+        <a href="#">Reviews</a>
+        <a href="#">Special Reports</a>
+        <a href="#">Images</a>
+    </div>
+</div>
+
+<!-- Car Grid -->
+<div class="car-grid">
+    <div class="car-card">
+        <img src="scorpio.avif" alt="Mahindra Scorpio N">
+        <h3>Mahindra Scorpio N</h3>
+        <p>82 Images</p>
+    </div>
+    <div class="car-card">
+        <img src="lamborgini.jpeg" alt="Renault Triber">
+        <h3>Lamborgine</h3>
+        <p>47 Images</p>
+    </div>
+    <div class="car-card">
+        <img src="royal.jpeg" alt="Hyundai Creta">
+        <h3>Royal</h3>
+        <p>125 Images</p>
+    </div>
+    <div class="car-card">
+        <img src="be-6e-exterior-right-front-three-quarter-5.avif" alt="Tata Punch">
+        <h3>Tata Be 6e</h3>
+        <p>96 Images</p>
+    </div>
+</div>
+
+</body>
+</html>
+
